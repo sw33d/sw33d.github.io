@@ -25,10 +25,10 @@
             <a-animation attribute="position" to="3 10 -5" direction="alternate" dur="10000"
             repeat="indefinite">
         </a-sphere>
-        <a-entity environment="preset: dream"></a-entity>
+        <!-- <a-entity environment="preset: dream"></a-entity> -->
         <a-plane src="#gndTexture" repeat="2000 2000" position="0 0 -4" scale="500 500 0.00001" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
-        <a-entity id="cameraRig" position="0 0.1 0">
+        <a-entity id="cameraRig" position="0 .3 0">
                 <a-entity camera wasd-controls look-controls></a-entity>
                 <a-entity id="rightHand" mixin="teleport" laser-controls="hand: right" oculus-go-controls="hand: right"></a-entity>
         </a-entity>
