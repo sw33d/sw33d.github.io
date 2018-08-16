@@ -1,38 +1,10 @@
 <html>
-<head>
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-    <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
-</head>
-
-<body>
-    <a-scene>
-        <a-assets>
-            <a-mixin id="teleport" teleport-controls="type: parabolic; cameraRig: #cameraRig; defaultPlaneSize: 1000;"></a-mixin>
-            <img id="boxTexture" src="assets/img/brick.jpg">
-            <img id="sphereTexture" src="assets/img/ball2.jpg">
-            <img id="gndTexture" src="assets/img/tile2.jpg">
-            <img id="sky" src="assets/img/desert.jpg">
-        </a-assets>
-        <a-sky src="#sky"></a-sky>
-    
-        <a-box src="#boxTexture" position="0 2 -10" rotation="0 45 45" scale="2 2 2">
-            <a-animation attribute="position" to="0 10 -10" direction="alternate" dur="5000"
-            repeat="indefinite">
-        </a-animation>
-        </a-box>
-        <a-sphere src="#sphereTexture" position="3 2 -5">
-            <a-animation attribute="position" to="3 10 -5" direction="alternate" dur="10000"
-            repeat="indefinite">
-        </a-sphere>
-        <!-- <a-entity environment="preset: dream"></a-entity> -->
-        <a-plane src="#gndTexture" repeat="2000 2000" position="0 0 -4" scale="500 500 0.00001" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-
-        <a-entity id="cameraRig" position="0 .3 0">
-                <a-entity camera wasd-controls look-controls></a-entity>
-                <a-entity id="rightHand" mixin="teleport" laser-controls="hand: right" oculus-go-controls="hand: right"></a-entity>
-        </a-entity>
-        
-    </a-scene>
-</body>
+  <body>
+    <a href='https://sw33d.github.io/A-Frame_1'>
+      A-Frame_1
+    </a>
+    <a href='https://sw33d.github.io/A-Frame_2'>
+      A-Frame_2
+    </a>
+  </body>
 </html>
